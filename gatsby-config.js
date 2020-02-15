@@ -65,5 +65,17 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-categories',
+      options: {
+        templatePath: `${__dirname}/src/templates/category.tsx`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-tags',
+      options: {
+        templatePath: `${__dirname}/src/templates/tag.tsx`,
+      },
+    },
   ],
 }
